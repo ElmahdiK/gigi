@@ -1,0 +1,231 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	font-family: 'Quicksand', cursive;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: whitesmoke;
+	/* background:url(https://ichef.bbci.co.uk/images/ic/1200x675/p01lzl8n.jpg);
+	background-size: cover;
+	background-position:  100%; */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+:focus {
+	outline: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+header, aside {
+	background: linear-gradient(180deg, #3f51b5, #1e88e5);
+	/* background: #303356; */
+}
+
+/***** header *****/
+
+header {
+	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	padding: 0px;
+	/* margin: 50px; */
+}
+
+header button {
+	background: rgba(0, 0, 0, 0.2);
+	font-size: 22px;
+	width: 50px;
+	height: 70px;
+	cursor: pointer;
+}
+
+header button i {
+	color: #fff;
+}
+
+header span {
+	color: #fff;
+	font-size: 20px;
+	padding: 15px;
+	flex: 1;
+}
+
+header img {
+	width: 70px;
+}
+
+/***** div_main_app *****/
+
+.div_main_app {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	width: 100%;
+	margin: 0 auto;
+	flex: 1;
+}
+
+aside, .section_content {
+	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
+	padding: 50px;
+	margin: 50px;
+}
+
+/***** nav_menu *****/
+
+aside {
+	display: flex;
+}
+
+.nav_menu {
+	min-width: 400px;
+	position: relative;
+}
+
+.nav_menu ez-calendar {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.nav_menu ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.nav_menu ul li {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.nav_menu ul li a:hover {
+	background: gold;
+	color: #222;
+}
+
+.nav_menu ul li a.a_active {
+	background: orange;
+	color: #222;
+}
+
+.nav_menu ul li a {
+	color: #eee;
+	flex: 1;
+	padding: 15px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.nav_menu ul li a span {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav_menu ul li a i {
+	font-size: 18px;
+}
+
+/***** section_content *****/
+
+.section_content {
+	background: rgba(255, 255, 255, 0.93);
+	flex: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.section_content article {
+	/*box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);*/
+	flex: 1;
+}
+
+.section_content article ul {
+	flex: 1;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.section_content article ul li label:hover {
+	background: #fafafa;
+}
+
+.section_content article ul li label {
+	border-bottom: 1px dotted #d1dce4;
+	padding: 10px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.section_content article ul li label span {
+	color: #333;
+	padding: 0px 10px;
+	flex: 1;
+	font-size: 14px;
+	display: block;
+}
+
+.section_content article ul li label span.span_price {
+	color: #bbb;
+	flex: 0;
+	font-size: 12px;
+}
+
+.section_content article ul li label.span_day {
+	border-bottom: 2px solid #287dd0;
+	text-align: right;
+}
+
+.section_content article ul li label.span_day span {
+	color: #287dd0;
+}
+
+#article_health {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+#article_health span.span_weight {
+	border-bottom: 2px solid #287dd0;
+	color: #287dd0;
+	/* flex: 1; */
+	font-size: 24px;
+	width: 100%;
+	padding: 20px;
+	display: inline-block;
+	text-align: center;
+}
+
+#div_rdv {
+	flex: 1;
+}

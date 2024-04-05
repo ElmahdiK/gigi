@@ -1,0 +1,39 @@
+/* ----- RESPONSIVE DESIGN ----- */
+
+/*@media screen and (max-height: 768px) and (max-width: 1366px){*/
+
+/* 15" */
+
+@media screen and (max-height: 768px) {}
+
+/* smartphone */
+
+@media screen and (max-width: 720px) {
+	header {
+		margin-bottom: 0px;
+	}
+	header span#span_title {
+		font-size: 30px;
+		padding: 10px;
+	}
+	article {
+		padding: 20px;
+		width: 100%;
+	}
+	article#article_home {
+		flex-direction: column;
+	}
+	article#article_home img {
+		filter: grayscale(70%);
+		max-width: 300px;
+		max-height: 300px;
+		padding: 30px;
+	}
+	article#article_portfolio img {
+		padding: 5px;
+		margin: 0px;
+	}
+	.post {
+		padding: 30px;
+	}
+}
