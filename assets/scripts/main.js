@@ -199,8 +199,8 @@ function loadGraphics() {
     var _data, _suffix, _min, _objectif = '';
     let _id = "div_health_content";
     _suffix = 'kg';
-    _min = 65;
-    _max = 120;
+    _min = 70;
+    _max = 115;
     _objectif = 70;
     _data = [
         [Date.UTC(2016, 6, 24), 83.9], //2016
