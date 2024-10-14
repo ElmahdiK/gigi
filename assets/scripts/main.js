@@ -1,7 +1,7 @@
 window.onload = () => {
-    var _tabMenu = ["notes", "todo", "rdv", "buy", "health"];//menu
-    var _tabMenuLabel = ["Planning", "A faire", "Rendez-vous", "Liste d'achat", "Santé"];//Menu
-    var _tabIcon = ["arrow-right", "bullseye", "calendar", "shopping-cart", "heart"]
+    var _tabMenu = ["health", "notes", "todo", "rdv", "buy"];//menu
+    var _tabMenuLabel = ["Santé", "Planning", "A faire", "Rendez-vous", "Liste d'achat"];//Menu
+    var _tabIcon = ["heart", "arrow-right", "bullseye", "calendar", "shopping-cart"]
 
     buildMenu(_tabMenu, _tabMenuLabel, _tabIcon);
 
@@ -199,9 +199,9 @@ function loadGraphics() {
     var _data, _suffix, _min, _objectif = '';
     let _id = "div_health_content";
     _suffix = 'kg';
-    _min = 75;
-    _max = 105;
-    _objectif = 65;
+    _min = 65;
+    _max = 120;
+    _objectif = 70;
     _data = [
         [Date.UTC(2016, 6, 24), 83.9], //2016
         [Date.UTC(2016, 9, 24), 90],
@@ -226,7 +226,9 @@ function loadGraphics() {
         [Date.UTC(2020, 10, 20), 90.0],
         [Date.UTC(2021, 5, 13), 88.4], //2021
         [Date.UTC(2022, 4, 2), 99.8], //2022
-        [Date.UTC(2022, 5, 11), 104.3]
+        [Date.UTC(2022, 5, 11), 104.3],
+        [Date.UTC(2024, 5, 1), 111.3], // 2024
+        [Date.UTC(2024, 9, 14), 108.5]
     ];
 
     const poidsActuel = _data[_data.length - 1][1];

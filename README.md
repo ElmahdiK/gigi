@@ -1,2 +1,13 @@
+<p align="center">
+    <img src="./assets/images/screenshot.png" />
+</p>
+
+
 # gigi
- Simple personal dashboard
+
+Dashboard personnel
+
+## ressources
+
+- jQuery : https://jquery.com/
+- HighCharts : https://www.highcharts.com/
